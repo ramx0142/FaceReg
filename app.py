@@ -1,8 +1,7 @@
 import os
 
 # --- PASTE THIS AT THE TOP OF APP.PY ---
-st.write("Current Working Directory:", os.getcwd())
-st.write("Files in this directory:", os.listdir())
+
 # ---------------------------------------
 import streamlit as st
 import tensorflow as tf
