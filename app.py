@@ -22,7 +22,9 @@ def load_model():
         return None
 
 model = load_model()
-
+st.write("Current Working Directory:", os.getcwd())
+st.write("Files in this directory:", os.listdir())
+# ---------------------------------------
 # 2. Define Class Names
 # Based on Page 1 of your PDF: {'NANDHINI': 0, 'PRAVEENA': 1, 'RAMPRASATH': 2}
 class_names = ['NANDHINI', 'PRAVEENA', 'RAMPRASATH']
