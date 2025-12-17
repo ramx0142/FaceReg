@@ -11,9 +11,6 @@ def load_model():
         # Load the model file 'DataAugmentation.h5'
         model = tf.keras.models.load_model('DataAugmentation.h5')
         return model
-    except Exception as e:
-        st.error("Model file 'DataAugmentation.h5' not found. Please download it from your notebook and place it here.")
-        return None
 
 model = load_model()
 
