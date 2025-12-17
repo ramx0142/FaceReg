@@ -7,10 +7,13 @@ from PIL import Image
 # We use @st.cache_resource so the model loads once and stays in memory
 @st.cache_resource
 def load_model():
-    
+    try:
         # Load the model file 'DataAugmentation.h5'
         model = tf.keras.models.load_model('DataAugmentation.h5')
         return model
+    except Exception as e:
+        st.error("Model file 'DataAugmentation.h5' not found. Please download it from your notebook and place it here.")
+        return None
 
 model = load_model()
 
